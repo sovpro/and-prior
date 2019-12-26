@@ -1,0 +1,27 @@
+{
+  "name": "@sovpro/and-prior",
+  "version": "1.0.0",
+  "description": "Make a function return the current and prior computed value",
+  "main": "and-prior.js",
+  "scripts": {
+    "test": "istanbul cover test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sovpro/and-prior.git"
+  },
+  "keywords": [
+    "return",
+    "prior",
+    "computed",
+    "value"
+  ],
+  "author": "sovpro <its.so@outlook.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.12.7"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5"
+  }
+}
