@@ -1,3 +1,5 @@
+var computed_values = new WeakMap ()
+
 Object.defineProperties (
   ValueAndPriorComputedValue.prototype
 , { value           : {
@@ -55,7 +57,6 @@ function sameAsPrior () {
 }
 
 function andPriorComputedValue (fn, opts) {
-  var computed_values = new WeakMap ()
   var andPCV = function () {
     var value = fn.apply (null, arguments)
     var is_promise = value &&
@@ -64,16 +65,14 @@ function andPriorComputedValue (fn, opts) {
     if (is_promise) {
       return value.then(function (value) {
         return priorComputedValue (
-            computed_values
-          , andPCV
+            andPCV
           , value        
           , opts
         )
       })
     }
     return priorComputedValue (
-        computed_values
-      , andPCV
+        andPCV
       , value        
       , opts
     )
@@ -82,8 +81,7 @@ function andPriorComputedValue (fn, opts) {
 }
 
 function priorComputedValue (
-    computed_values
-  , andPCV
+    andPCV
   , value        
   , opts
 ) {
