@@ -61,5 +61,5 @@ var second_ap = sumAP (1.1, 1.1)
 console.log (second_ap.sameAsPrior ())
 ```
 
-In the code above, the return value of `first_ap.sameAsPrior ()` will be `false` assuming no prior computed value, by `sumAndPrior`. The return value of `second_ap.sameAsPrior ()` will be `true` because the custom "same as prior" function performs rounding before comparison. 
+In the code above, the return value of `first_ap.sameAsPrior ()` will be `false` assuming no prior computed value by `sumAP`. The return value of `second_ap.sameAsPrior ()` will be `true` because the custom "same as prior" function performs rounding before comparison.
 

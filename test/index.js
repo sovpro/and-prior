@@ -10,7 +10,7 @@ function sum (a, b) {
 }
 
 function promiseSum (a, b) {
-  return Promise.resolve (sum (a + b))
+  return Promise.resolve (sum (a, b))
 }
 
 function testBasics () {
