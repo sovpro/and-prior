@@ -2,6 +2,8 @@
 
 Wrap a function to return the current and prior computed value
 
+[![Build status for Node.js 0.12 and higher](https://github.com/sovpro/and-prior/workflows/Node.js%200.12%20and%20newer%20/badge.svg?branch=master)](https://github.com/sovpro/and-prior/commits/master)
+
 ## Access the value and prior value
 
 ```js

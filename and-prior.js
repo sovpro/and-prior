@@ -53,7 +53,7 @@ function sameAsPrior () {
       , this.prior
     )
   }
-  return this.value === this.prior
+  return Object.is (this.value, this.prior)
 }
 
 function andPriorComputedValue (fn, opts) {
