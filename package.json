@@ -1,6 +1,6 @@
 {
   "name": "@sovpro/and-prior",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Wrap a function to return the current and prior computed value",
   "main": "and-prior.js",
   "scripts": {
